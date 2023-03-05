@@ -22,6 +22,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
+      extendBody: true,
       backgroundColor: bgColor,
       bottomNavigationBar: Container(
         width: size.width,

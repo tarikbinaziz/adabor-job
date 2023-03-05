@@ -1,3 +1,20 @@
 const storeLocation="Store location";
 const mondolibugSylhet="Mondolibug, Sylhet";
 const lookingForShoes="Looking for shoes";
+const popularShoes="Popular Shoes";
+const seeAll="See all";
+const bestSeller="Best Seller";
+const nikeJordan="Nike Jordan";
+const tk="\$493.00";
+const tk2="\$897.99";
+const tk3="\$849.69";
+const newArrivals="New Arrivals";
+const bestChoice="Best Choice";
+const nikeAirJordan="Nike Air Jordan";
+const mensShoes="Men’s Shoes";
+const airJordanDetails="Air Jordan is an American brand of basketball shoes athletic, casual, and style clothing produced by Nike     fhss";
+const gallery="Gallery";
+const size="Size";
+const price="Price";
+const addToCart="Add To Cart";
+
