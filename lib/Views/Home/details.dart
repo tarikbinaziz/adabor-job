@@ -1,13 +1,9 @@
-import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:soclose_dhaka_ltd_task/Consts/colors.dart';
 import 'package:soclose_dhaka_ltd_task/Consts/list.dart';
 import 'package:soclose_dhaka_ltd_task/Views/Home/bottom_nav_bar_home.dart';
-import 'package:soclose_dhaka_ltd_task/Views/Home/home.dart';
 import 'package:velocity_x/velocity_x.dart';
-import 'package:badges/badges.dart' as badges;
 import '../../Consts/images.dart';
 import '../../Consts/strings.dart';
 
@@ -27,17 +23,17 @@ class _DetailsScreenState extends State<DetailsScreen> {
         backgroundColor: bgColor,
         centerTitle: true,
         elevation: 0,
-        leading: Icon(
+        leading: const Icon(
           Icons.keyboard_arrow_left,
           color: titleColor,
-        ).onTap(()=>BottomNavBar().launch(context))
+        ).onTap(()=>const BottomNavBar().launch(context))
             .box
-            .padding(EdgeInsets.all(8))
-            .margin(EdgeInsets.only(left: 10, top: 4))
+            .padding(const EdgeInsets.all(8))
+            .margin(const EdgeInsets.only(left: 10, top: 4))
             .roundedFull
             .color(navBgColor)
             .makeCentered(),
-        title: Text(
+        title: const Text(
           mensShoes,
           style: TextStyle(color: titleColor),
         ),
@@ -48,8 +44,8 @@ class _DetailsScreenState extends State<DetailsScreen> {
             width: 20,
           )
               .box
-              .padding(EdgeInsets.all(8))
-              .margin(EdgeInsets.only(right: 20, top: 4))
+              .padding(const EdgeInsets.all(8))
+              .margin(const EdgeInsets.only(right: 20, top: 4))
               .roundedFull
               .color(navBgColor)
               .make(),
@@ -62,7 +58,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
           Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+            children: const [
               Text(
                 price,
                 style: TextStyle(color: subtitleColor),
@@ -76,12 +72,12 @@ class _DetailsScreenState extends State<DetailsScreen> {
               ),
             ],
           ),
-          Text(
+          const Text(
             addToCart,
             style: TextStyle(fontWeight: FontWeight.w500, fontSize: 18,color: navBgColor),
-          ).box.roundedLg.color(mainColor).padding(EdgeInsets.all(10)).make()
+          ).box.roundedLg.color(mainColor).padding(const EdgeInsets.all(10)).make()
         ],
-      ).box.height(80).topRounded().color(navBgColor).padding(EdgeInsets.symmetric(horizontal: 20)).shadowSm.make(),
+      ).box.height(80).topRounded().color(navBgColor).padding(const EdgeInsets.symmetric(horizontal: 20)).shadowSm.make(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -97,9 +93,9 @@ class _DetailsScreenState extends State<DetailsScreen> {
                     child: Image.asset("assets/images/pdisplay.png"),
                   ),
                   Container(
-                    padding: EdgeInsets.all(12),
+                    padding: const EdgeInsets.all(12),
                     decoration:
-                        BoxDecoration(color: mainColor, shape: BoxShape.circle),
+                        const BoxDecoration(color: mainColor, shape: BoxShape.circle),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -119,7 +115,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
             16.heightBox,
             Container(
               width: double.infinity,
-              decoration: BoxDecoration(color: navBgColor),
+              decoration: const BoxDecoration(color: navBgColor),
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Column(
@@ -127,10 +123,10 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   children: [
                     Text(
                       bestSeller.toUpperCase(),
-                      style: TextStyle(color: mainColor),
+                      style: const TextStyle(color: mainColor),
                     ),
                     6.heightBox,
-                    Text(
+                    const Text(
                       nikeAirJordan,
                       style: TextStyle(
                           color: titleColor,
@@ -138,7 +134,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           fontSize: 24),
                     ),
                     12.heightBox,
-                    Text(
+                    const Text(
                       "\$967.800",
                       style: TextStyle(
                           color: titleColor,
@@ -146,14 +142,14 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           fontSize: 20),
                     ),
                     8.heightBox,
-                    Text(
+                    const Text(
                       airJordanDetails,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(color: subtitleColor),
                     ),
                     16.heightBox,
-                    Text(
+                    const Text(
                       gallery,
                       style: TextStyle(
                           color: titleColor,
@@ -170,35 +166,35 @@ class _DetailsScreenState extends State<DetailsScreen> {
                                 )
                                     .box
                                     .color(bgColor)
-                                    .padding(EdgeInsets.all(10))
-                                    .margin(EdgeInsets.only(right: 16))
+                                    .padding(const EdgeInsets.all(10))
+                                    .margin(const EdgeInsets.only(right: 16))
                                     .rounded
                                     .make())),
                     16.heightBox,
                     Row(
                       children: [
-                        Text(
+                        const Text(
                           size,
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               fontSize: 18,
                               color: titleColor),
                         ),
-                        Spacer(),
-                        Text(
+                        const Spacer(),
+                        const Text(
                           "EU",
                           style: TextStyle(
                               fontWeight: FontWeight.w500, color: titleColor),
                         ),
                         12.widthBox,
-                        Text(
+                        const Text(
                           "US",
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
                               color: subtitleColor),
                         ),
                         12.widthBox,
-                        Text(
+                        const Text(
                           "Uk",
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
@@ -227,7 +223,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                                     .color(indexNum == numberList[index]
                                         ? mainColor
                                         : bgColor)
-                                    .padding(EdgeInsets.all(12))
+                                    .padding(const EdgeInsets.all(12))
                                     .roundedFull
                                     .make())),
                     100.heightBox

@@ -1,7 +1,6 @@
 import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:nb_utils/nb_utils.dart';
 import 'package:soclose_dhaka_ltd_task/Consts/colors.dart';
 import '../../Consts/images.dart';
 import 'home.dart';
@@ -16,7 +15,7 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   var currentIndex = 0;
 
-  var pages=[HomeScreen(),HomeScreen(),HomeScreen(),HomeScreen(),];
+  var pages=[const HomeScreen(),const HomeScreen(),const HomeScreen(),const HomeScreen(),];
 
   @override
   Widget build(BuildContext context) {
@@ -44,18 +43,18 @@ class _BottomNavBarState extends State<BottomNavBar> {
                     BoxShadow(
                       color: mainColor.withOpacity(0.60),
                       blurRadius: 20,
-                      offset: Offset(0, 8), // changes position of shadow
+                      offset: const Offset(0, 8), // changes position of shadow
                     ),
                   ],
                 ),
                 child: FloatingActionButton(
                     backgroundColor: mainColor,
-                    child: Image.asset(icBag,width: 25,),
                     elevation: 0.1,
-                    onPressed: () {}),
+                    onPressed: () {},
+                    child: Image.asset(icBag,width: 25,)),
               ),
             ),
-            Container(
+            SizedBox(
               width: size.width,
               height: 80,
               // color: navBgColor,
