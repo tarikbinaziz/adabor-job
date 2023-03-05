@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:soclose_dhaka_ltd_task/Consts/colors.dart';
+import 'package:soclose_dhaka_ltd_task/Views/Splash%20Screen/splash_screen.dart';
 import 'Views/Home/bottom_nav_bar_home.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(fontFamily: "airbnb"),
-      home:const BottomNavBar(),
+      home:const SplashScreen(),
     );
   }
 }
